@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_against"
+    android:layout_width="match_parent"
+    android:background="@mipmap/dark_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.saic.easydrive.ui.MyToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@mipmap/dark_bg" />
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="城市："/>
+
+            <EditText
+                android:id="@+id/licenseNum"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textColorHint="#bbbbbb"
+                android:textColor="@color/white"
+                android:hint="请输入您所在的城市"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="车牌号："/>
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textColorHint="#bbbbbb"
+                android:hint="请输入您的车牌号"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="车架号："/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textColorHint="#bbbbbb"
+                android:hint="请输入后六位车架号"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:text="查询"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
